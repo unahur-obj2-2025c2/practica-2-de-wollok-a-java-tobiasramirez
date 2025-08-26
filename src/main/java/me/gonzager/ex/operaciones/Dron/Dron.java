@@ -35,7 +35,7 @@ public abstract class Dron {
     return mision.comprobarAvanzado(this);
   }
   public void disminuirAutonomia() {
-    autonomia -= 2;
+    autonomia -= 2; 
   }
  
 }

@@ -17,4 +17,20 @@ public class Escuadron {
         return drones.stream().anyMatch(d->d.esAvanzado());
    }
    
+   public void añadirDron(Dron dron) {
+    drones.add(dron);
+   }
+   public void eliminarDron(Dron dron) {
+    drones.remove(dron);
+   }
+   public void costoOperacion() {
+    drones.forEach(d->d.disminuirAutonomia());
+   }
+
+   public void operarZona(CiudadFuturista zona) {
+    if (this.puedeOperar(zona)) {
+        zona.recibirOperacion();
+        this.costoOperacion();
+    }
+   }
 }
