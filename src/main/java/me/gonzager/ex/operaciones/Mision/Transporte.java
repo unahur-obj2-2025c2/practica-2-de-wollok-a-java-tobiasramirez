@@ -1,9 +1,13 @@
-package me.gonzager.ex.operaciones;
+package me.gonzager.ex.operaciones.Mision;
 
-public class Transporte extends Mision {
+import me.gonzager.ex.operaciones.Dron.Dron;
+
+public class Transporte implements Mision {
+    
+    
     @Override
         public 
-        int extra(Dron dron) {
+        Integer extra(Dron dron) {
             return 100;
         }
     @Override
