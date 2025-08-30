@@ -21,4 +21,8 @@ public class Vigilancia implements Mision {
     public Boolean sensoresDuraderos() {
         return sensores.stream().allMatch(s-> s.esDuradero());
     }
+    public Vigilancia(List<Sensor> sensores) {
+        this.sensores = sensores;
+    }
+    
     }

@@ -1,8 +1,14 @@
-package me;
+package me.gonzager;
 
 public class CiudadFuturista {
     private Integer maximoDrones = 10;
     private Integer operacionesRecibidas = 0;
+
+    
+    public Integer getOperacionesRecibidas() {
+        return operacionesRecibidas;
+    }
+
     private Integer tamañoTotal;
 
     public Integer getTamañoTotal() {

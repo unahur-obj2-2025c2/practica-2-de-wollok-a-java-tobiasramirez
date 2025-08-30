@@ -35,7 +35,10 @@ public abstract class Dron {
     return mision.comprobarAvanzado(this);
   }
   public void disminuirAutonomia() {
+    if(autonomia<0){
+      throw new RuntimeException("la autonomia no puede ser menor que cero");
+
+   }
     autonomia -= 2; 
   }
- 
-}
+ }

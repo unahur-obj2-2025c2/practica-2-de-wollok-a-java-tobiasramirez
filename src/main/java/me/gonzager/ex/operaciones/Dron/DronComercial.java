@@ -10,11 +10,16 @@ public class DronComercial extends Dron {
 
     @Override
     public Boolean avanzado() {
-        return false;
+        return Boolean.FALSE;
     }
    public DronComercial(Integer autonomia, Mision mision, Integer procesamiento ){
     this.autonomia = autonomia;
     this.mision = mision;
+    this.procesamiento = procesamiento;
+   }
+   public DronComercial(Integer autonomia,  Integer procesamiento ){
+    this.autonomia = autonomia;
+
     this.procesamiento = procesamiento;
    }
 }

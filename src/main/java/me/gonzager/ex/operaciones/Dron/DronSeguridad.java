@@ -15,4 +15,8 @@ public class DronSeguridad extends Dron {
     this.mision = mision;
     this.procesamiento = procesamiento;
    }
+     public DronSeguridad(Integer autonomia,  Integer procesamiento ){
+    this.autonomia = autonomia;
+    this.procesamiento = procesamiento;
+   }
 }
